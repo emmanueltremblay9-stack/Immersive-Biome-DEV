@@ -1,0 +1,30 @@
+# Gradle / Java
+.gradle/
+build/
+out/
+*.class
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.project
+.classpath
+.settings/
+
+# Minecraft dev runtime
+run/
+runs/
+logs/
+crash-reports/
+saves/
+world/
+usercache.json
+options.txt
+
+# OS / local secrets
+.DS_Store
+Thumbs.db
+.env
+*.keystore
+*.jks
