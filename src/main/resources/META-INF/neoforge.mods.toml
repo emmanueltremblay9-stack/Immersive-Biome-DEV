@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="immersive_biome"
+version="0.1.0-dev"
+displayName="Immersive Biome"
+authors="Dirty Studyo"
+description='''
+Early development scaffold. No regional ecology simulation or biome gameplay
+has been implemented or validated in this repository.
+'''
+
+[[dependencies.immersive_biome]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.233,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.immersive_biome]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="NONE"
+side="BOTH"
