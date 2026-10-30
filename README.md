@@ -25,9 +25,9 @@ La séparation de dépôt, les cibles historiques et les garanties de sécurité
 
 ## Construire
 
-Prérequis : JDK 21 et Gradle 9.2.1. Utiliser `gradle --no-daemon build`. Le Gradle Wrapper complet (`gradlew` et `gradle-wrapper.jar`) **n'est pas encore versionné**; avant de le déclarer disponible, générer et vérifier le wrapper officiel, puis le committer dans une PR dédiée. Le workflow GitHub Actions emploie Gradle via `gradle/actions/setup-gradle` et ne publie rien.
+Prérequis : JDK 21. Le wrapper Gradle 9.2.1 (`gradlew` et `gradle/wrapper/gradle-wrapper.jar`) est versionné et épingle le checksum officiel de la distribution. Utiliser `./gradlew --no-daemon build`. Le workflow GitHub Actions utilise le même wrapper et ne publie rien.
 
-Aucune compilation réelle ni GameTest n'est encore certifié. Consulter `docs/TEST_PLAN.md` et `docs/PROTOTYPE_IMPORT.md` avant d'intégrer les candidats IB-GATE-002.
+Un build réussi valide uniquement le squelette et ses tests JVM; il ne certifie pas les GameTests ni le runtime Minecraft. Consulter `docs/TEST_PLAN.md` et `docs/PROTOTYPE_IMPORT.md` avant d'intégrer les candidats IB-GATE-002.
 
 ## Sécurité
 
